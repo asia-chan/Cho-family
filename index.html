@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع رفع فيديوهات الأفلام</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>موقع رفع فيديوهات الأفلام</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">أفلام جديدة</a></li>
+                    <li><a href="#">حول</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="upload-section">
+                <h2>رفع فيديو</h2>
+                <form id="uploadForm">
+                    <input type="file" id="videoUpload" accept="video/*" required>
+                    <input type="text" id="videoTitle" placeholder="عنوان الفيديو" required>
+                    <textarea id="videoDescription" placeholder="وصف الفيديو" required></textarea>
+                    <button type="submit">رفع</button>
+                </form>
+            </section>
+
+            <section class="videos-section">
+                <h2>أحدث الأفلام</h2>
+                <div id="videoList">
+                    <!-- سيتم إضافة الفيديوهات هنا بواسطة JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>حقوق النشر &copy; 2024 موقع رفع فيديوهات الأفلام. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
